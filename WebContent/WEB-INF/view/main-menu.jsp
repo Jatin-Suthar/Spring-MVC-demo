@@ -10,6 +10,6 @@
 
 <br>
 
-<a href = "student/showForm">Check Frequency App</a>
+<a href = "student/showForm">Student Admission Form</a>
 </body>
 </html>
