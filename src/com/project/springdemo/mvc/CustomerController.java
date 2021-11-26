@@ -20,8 +20,8 @@ public class CustomerController {
 	}
 	
 	@RequestMapping("/processForm")
-	public String processForm(@Valid @ModelAttribute Customer theCustomer, BindingResult theBindingResult) {
-		if(theCustomer.getLastName().stripIndent() == "" || theBindingResult.hasErrors()) {
+	public String processForm(@Valid @ModelAttribute Customer customer, BindingResult bindingResult) {
+		if(customer.getLastName().stripIndent() == "" || bindingResult.hasErrors()) {
 			return "customer-form";
 		}
 		return "customer-confirmation";
